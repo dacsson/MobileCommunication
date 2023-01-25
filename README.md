@@ -6,6 +6,6 @@
 модель, владелец мобильного телефона, услуга, тариф, платёж и др.
 
 # Стек
-> Frontend: ReactNative
-> Backend: NodeJs
-> BD: PostgreSQL
+* Frontend: ReactNative
+* Backend: NodeJs
+* BD: PostgreSQL
