@@ -1,0 +1,10 @@
+{
+    "dbConInfo":
+    {
+        "user": "postgres",
+        "host": "localhost",
+        "databse": "communication",
+        "password": "1212",
+        "port": "5432"
+    }
+}
