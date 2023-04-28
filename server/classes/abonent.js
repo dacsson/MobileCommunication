@@ -12,3 +12,5 @@ class Abonent {
         this.birthDate = birthDate
     }
 }
+
+module.exports = Abonent

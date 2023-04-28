@@ -7,3 +7,5 @@ class Plan {
         this.callCost = callCost
     }
 }
+
+module.exports = Plan

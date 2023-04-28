@@ -1,38 +1,119 @@
-.App {
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #F4F4FB;
+}
+
+/* NAVIGATION SIDEBAR */
+
+.sidebar {
+  width: 100%;
+  height: 5%;
+  position: fixed;
+  font-size: 16px;
+  background-color: white;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+}
+
+.sidebar .menu {
+  margin-left: auto;
+  display: inline-block;
+  width: fit-content;
+  margin-left: 5%;
+}
+
+.sidebar button {
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  width: 120px;
+  padding: 9px;
+  border: none;
+  text-align: center;
+  background-color: transparent;
+  font-size: 16px;
+  transition: 0.1s ease-out;
+}
+
+.sidebar button:hover {
+  transition: 0.2s ease-in;
+  color: #5e69ee;
+  background: linear-gradient(to right, #5e69ee, #39AFEA);
+  background-position: 0 100%;
+  background-size: 100% 2px;
+  background-repeat: repeat-x;
+}
+
+/* .sidebar button:active {
+  transition: 0.2s ease-in;
+  background-color: #5e69ee;
+} */
+
+/* DASHBOARD CARDS */
+
+.main {
+  top: 7%;
+  position: fixed;
+  width: 100%;
+  height: 93%;
+  padding: 10px;
+}
+
+.main .card {
+  position: relative;
+  background-color: white;
+  border-radius: 10px;
+  width: 150px;
+  height: 200px;
+  margin: 20px;
+  display: inline-block;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main .bigCard {
+  position: relative;
+  background-color: white;
+  border-radius: 10px;
+  width: 400px;
+  height: 300px;
+  margin: 20px;
+  display: inline-block;
+  text-align: center; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main .hugeCard {
+  background-color: white;
+  border-radius: 10px;
+  width: 96%;
+  height: 95%;
+  margin-left: 1%;
+  display: inline-block;
+  text-align: center;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.main .card h1, .bigCard h1 {
+  font-size: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+/* FOR TABLES */
+
+.cell {
+  width: 110px;
+  padding: 10px;
+  display: inline-block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  width: 150px;
+  border: 1px solid white;
+}
+
+input::-webkit-input-placeholder {
+  color: black;
+  font-size: 16px;
+  text-align: center;
 }

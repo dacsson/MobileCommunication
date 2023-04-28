@@ -4,3 +4,5 @@ class City {
         this.name = name
     }
 }
+
+module.exports = City
